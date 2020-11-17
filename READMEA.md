@@ -55,11 +55,14 @@ public:
 ## 3. Pattern: Fast & Slow pointers, 快慢指针类型
 经典题目：
 - ~~LinkedList Cycle (easy)~~
-/*
+- Start of LinkedList Cycle (medium)
+- Happy Number (medium)
+- Middle of the LinkedList (easy)
 
+/*
 Reference:
 https://www.cnblogs.com/grandyang/p/4355505.html
-Rotate List 旋转链表
+(1)Rotate List 旋转链表
 Given a list, rotate the list to the right by k places, where k is non-negative.
 For example:
 Given 1->2->3->4->5->NULL and k = 2,
@@ -139,9 +142,6 @@ public:
 };
 ```
 
-- Start of LinkedList Cycle (medium)
-- Happy Number (medium)
-- Middle of the LinkedList (easy)
  
 ## 4. Pattern: Merge Intervals，区间合并类型
 经典题目：
