@@ -14,7 +14,8 @@
 
 /*
 拓展相关题目:给定范围求和：
-Reference:https://www.cnblogs.com/grandyang/p/4952464.html
+Reference:   
+https://www.cnblogs.com/grandyang/p/4952464.html
 
 Range Sum Query - Immutable 区域和检索 - 不可变
 Given an integer array nums, find the sum of the elements between indices iand j (i ≤ j), inclusive.
@@ -33,10 +34,12 @@ You may assume that the array does not change.
 There are many calls to sumRange function.
 
 
-这道题让我们检索一个数组的某个区间的所有数字之和，题目中给了两条条件，首先数组内容不会变化，
-其次有很多的区间和检索。那么我们用传统的遍历相加来求每次区间和检索，十分的不高效，而且无法通过 OJ。
+这道题让我们检索一个数组的某个区间的所有数字之和，   
+题目中给了两条条件，首先数组内容不会变化，
+其次有很多的区间和检索。那么我们用传统的遍历相加来求  
+每次区间和检索，十分的不高效，而且无法通过 OJ。  
 所以这道题的难点就在于是否能想到来用建立累计直方图的思想来建立一个累计和的数组 dp，
-其中 dp[i] 表示 [0, i] 区间的数字之和，那么 [i,j] 
+其中 dp[i] 表示 [0, i] 区间的数字之和，那么 [i,j]  
 就可以表示为 dp[j]-dp[i-1]，这里要注意一下当 i=0 时，直接返回 dp[j] 即可，参见代码如下：
 */
 
@@ -79,7 +82,8 @@ private:
 
 
 1，Maximum Sum Subarray of Size K (easy)
-Given an array nums and a target value k, find the maximum length of a subarray that sums to k. If there isn't one, return 0 instead.
+Given an array nums and a target value k, find the maximum length of a   
+subarray that sums to k. If there isn't one, return 0 instead.
 Example 1:
 Given nums = [1, -1, 5, -2, 3], k = 3,
 return 4. (because the subarray [1, -1, 5, -2] sums to 3 and is the longest)
@@ -137,8 +141,10 @@ Given 1->2->3->4->5->NULL and k = 2,
 return 4->5->1->2->3->NULL.
 
 这道旋转链表的题和之前那道 Rotate Array 旋转数组 很类似，但是比那道要难一些，
-因为链表的值不能通过下表来访问，只能一个一个的走，我刚开始拿到这题首先想到的就是用快慢指针来解，
-快指针先走k步，然后两个指针一起走，当快指针走到末尾时，慢指针的下一个位置是新的顺序的头结点，这样就可以旋转链表了，
+因为链表的值不能通过下表来访问，只能一个一个的走，  
+我刚开始拿到这题首先想到的就是用快慢指针来解，
+快指针先走k步，然后两个指针一起走，当快指针走到末尾时，  
+慢指针的下一个位置是新的顺序的头结点，这样就可以旋转链表了，
 还有就是当k大于链表长度和k远远大于链表长度时该如何处理，我们需要首先遍历一遍原链表得到链表长度n，
 然后k对n取余，这样k肯定小于n，就可以用上面的算法了，代码如下:
 */
