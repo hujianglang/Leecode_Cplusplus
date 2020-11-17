@@ -39,8 +39,7 @@ There are many calls to sumRange function.
 其次有很多的区间和检索。那么我们用传统的遍历相加来求  
 每次区间和检索，十分的不高效，而且无法通过 OJ。  
 所以这道题的难点就在于是否能想到来用建立累计直方图的思想来建立一个累计和的数组 dp，
-其中 dp[i] 表示 [0, i] 区间的数字之和，那么 [i,j]  
-就可以表示为 dp[j]-dp[i-1]，这里要注意一下当 i=0 时，直接返回 dp[j] 即可，参见代码如下：
+其中 dp[i] 表示 [0, i] 区间的数字之和，那么 [i,j]  就可以表示为 dp[j]-dp[i-1]，这里要注意一下当 i=0 时，直接返回 dp[j] 即可，参见代码如下：
 */
 
 ```C++
@@ -81,16 +80,16 @@ private:
 
 
 
-1，Maximum Sum Subarray of Size K (easy)
-Given an array nums and a target value k, find the maximum length of a   
-subarray that sums to k. If there isn't one, return 0 instead.
-Example 1:
-Given nums = [1, -1, 5, -2, 3], k = 3,
-return 4. (because the subarray [1, -1, 5, -2] sums to 3 and is the longest)
-Example 2:
-Given nums = [-2, -1, 2, 1], k = 1,
-return 2. (because the subarray [-1, 2] sums to 1 and is the longest)
-Follow Up:
+1，Maximum Sum Subarray of Size K (easy)  
+Given an array nums and a target value k, find the maximum length of a  
+subarray that sums to k. If there isn't one, return 0 instead.   
+Example 1:   
+Given nums = [1, -1, 5, -2, 3], k = 3,   
+return 4. (because the subarray [1, -1, 5, -2] sums to 3 and is the longest)   
+Example 2:   
+Given nums = [-2, -1, 2, 1], k = 1,   
+return 2. (because the subarray [-1, 2] sums to 1 and is the longest)   
+Follow Up:   
 Can you do it in O(n) time?
 
 ```C++
