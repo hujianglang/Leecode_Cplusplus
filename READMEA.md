@@ -1,7 +1,7 @@
 # LeetCode刷题指南
 ## 1. Pattern: Sliding window，滑动窗口类型
 ### 经典题目：
-- ~~Maximum Sum Subarray of Size K (easy)~~
+- <font color=red> ~~Maximum Sum Subarray of Size K (easy)~~ </font>
 - Smallest Subarray with a given sum (easy)
 - Longest Substring with K Distinct Characters (medium)
 - Fruits into Baskets (medium)
